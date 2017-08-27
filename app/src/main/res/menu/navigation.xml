@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/displaySettings"
+        android:title="currentSettings"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/actionSettings"
+        android:icon="@drawable/settings"
+        android:title="Settings"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/actionRevise"
+        android:icon="@drawable/tables"
+        android:title="Revise Tables"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/actionFeedback"
+        android:icon="@drawable/feedback"
+        android:title="Feedback"
+        app:showAsAction="ifRoom" />
+</menu>

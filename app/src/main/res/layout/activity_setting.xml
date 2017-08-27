@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="40dp"
+    android:gravity="left"
+    android:weightSum="10"
+    android:orientation="vertical">
+    <android.support.v4.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"/>
+    <TextView
+        android:id="@+id/levelInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is where level info will come"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Level : "
+            android:textSize="20dp"/>
+        <Spinner
+            android:id="@+id/chooseLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:spinnerMode="dropdown"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Operations"
+            android:textSize="20dp"/>
+        <CheckBox
+            android:id="@+id/addSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Addition" />
+        <CheckBox
+            android:id="@+id/subSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtraction" />
+        <CheckBox
+            android:id="@+id/mulSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multiplication" />
+        <CheckBox
+            android:id="@+id/divSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Division" />
+        <CheckBox
+            android:id="@+id/percSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Percentage" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Allow Approximate answers"/>
+                <TextView
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff0000"
+                    android:textSize="10dp"
+                    android:text="This will accept all answers upto the closest multiple of 5 * 10^(MSD - 1).Changing this state will reset your score across all levels"/>
+            </LinearLayout>
+            <ToggleButton
+                android:id="@+id/allowApprox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ResetScores"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff0000"
+                    android:textSize="10dp"
+                    android:text="This will reset your score across all levels"/>
+            </LinearLayout>
+            <ToggleButton
+                android:id="@+id/resetScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset Score"/>
+        </GridLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/cancelSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"/>
+        <Button
+            android:id="@+id/applySetting"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/settingsValid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textSize="10dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:text="Atleast one operation must be selected"/>
+</LinearLayout>

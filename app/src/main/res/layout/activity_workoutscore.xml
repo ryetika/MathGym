@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:weightSum="20"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="Workout Score"
+        android:layout_weight="1"/>
+    <TextView
+        android:id = "@+id/infoOnOps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffa500"
+        android:layout_weight="1"/>
+    <com.github.mikephil.charting.charts.HorizontalBarChart
+        android:id="@+id/scoreGraph"
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_weight="17"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/goToWorkout"
+            android:layout_gravity="center"
+            android:text="Back"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/goHome"
+            android:layout_gravity="center"
+            android:text="Finish"/>
+    </LinearLayout>
+</LinearLayout>

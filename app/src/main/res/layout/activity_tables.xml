@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:weightSum="20"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="Multiplication Tables"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter the number ( 1 - 25) "/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/multiplier"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:id="@+id/multiplierInfo"
+            android:gravity="center"
+            android:text="testing"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/getTables"
+            android:text="Compute"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="16">
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="10">
+            <TextView android:id="@+id/mul1"/>
+            <TextView android:id="@+id/mul11"/>
+            <TextView android:id="@+id/mul2"/>
+            <TextView android:id="@+id/mul12"/>
+            <TextView android:id="@+id/mul3"/>
+            <TextView android:id="@+id/mul13"/>
+            <TextView android:id="@+id/mul4"/>
+            <TextView android:id="@+id/mul14"/>
+            <TextView android:id="@+id/mul5"/>
+            <TextView android:id="@+id/mul15"/>
+            <TextView android:id="@+id/mul6"/>
+            <TextView android:id="@+id/mul16"/>
+            <TextView android:id="@+id/mul7"/>
+            <TextView android:id="@+id/mul17"/>
+            <TextView android:id="@+id/mul8"/>
+            <TextView android:id="@+id/mul18"/>
+            <TextView android:id="@+id/mul9"/>
+            <TextView android:id="@+id/mul19"/>
+            <TextView android:id="@+id/mul10"/>
+            <TextView android:id="@+id/mul20"/>
+        </GridLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:text="Back"/>
+    </LinearLayout>
+    <android.support.v4.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+</LinearLayout>

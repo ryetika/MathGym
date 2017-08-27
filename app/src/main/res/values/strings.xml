@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MathGym</string>
+    <string-array name="gameLevels_array">
+        <item>easy</item>
+        <item>medium</item>
+        <item>hard</item>
+    </string-array>
+    <string-array name="typeDirections_array">
+        <item>L --&gt; R</item>
+        <item>L &lt;-- R</item>
+    </string-array>
+    <string-array name="changeSign_array">
+        <item>is +</item>
+        <item>is -</item>
+    </string-array>
+</resources>
